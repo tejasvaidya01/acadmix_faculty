@@ -1,0 +1,267 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.fac_page.body
+    - field.field.node.fac_page.field_affiliations
+    - field.field.node.fac_page.field_awards_and_fellowship
+    - field.field.node.fac_page.field_background
+    - field.field.node.fac_page.field_building_new
+    - field.field.node.fac_page.field_courses_taught
+    - field.field.node.fac_page.field_detailed_information_page
+    - field.field.node.fac_page.field_email_new
+    - field.field.node.fac_page.field_employment_category
+    - field.field.node.fac_page.field_faculty_cv
+    - field.field.node.fac_page.field_faculty_designation
+    - field.field.node.fac_page.field_faculty_photo
+    - field.field.node.fac_page.field_faculty_rd_proj
+    - field.field.node.fac_page.field_full_name
+    - field.field.node.fac_page.field_google_scholar_id
+    - field.field.node.fac_page.field_mobile_number_new
+    - field.field.node.fac_page.field_orcid
+    - field.field.node.fac_page.field_phone_no_new
+    - field.field.node.fac_page.field_research_area
+    - field.field.node.fac_page.field_room_no
+    - field.field.node.fac_page.field_scopus_id
+    - image.style.thumbnail
+    - node.type.fac_page
+  module:
+    - file
+    - image
+    - link
+    - name
+    - paragraphs
+    - path
+    - text
+id: node.fac_page.default
+targetEntityType: node
+bundle: fac_page
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_affiliations:
+    weight: 155
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_awards_and_fellowship:
+    weight: 156
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_background:
+    weight: 157
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_building_new:
+    weight: 158
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_courses_taught:
+    weight: 159
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_detailed_information_page:
+    weight: 173
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_email_new:
+    weight: 161
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_employment_category:
+    weight: 162
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_faculty_cv:
+    weight: 163
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_faculty_designation:
+    weight: 150
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_faculty_photo:
+    weight: 149
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_faculty_rd_proj:
+    type: entity_reference_paragraphs
+    weight: 174
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_full_name:
+    weight: 165
+    settings: {  }
+    third_party_settings: {  }
+    type: name_default
+    region: content
+  field_google_scholar_id:
+    weight: 166
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_mobile_number_new:
+    weight: 167
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_orcid:
+    weight: 168
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_phone_no_new:
+    weight: 169
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_research_area:
+    weight: 154
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_room_no:
+    weight: 171
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_scopus_id:
+    weight: 172
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,5 @@
+name: 'Acadmix Faculty Content Type'
+type: module
+description: 'Acadmix Faculty Content Type'
+core: 8.x
+package: 'Acadmix Content Type'

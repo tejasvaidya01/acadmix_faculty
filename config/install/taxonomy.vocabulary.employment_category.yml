@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - acadmix_faculty
+name: 'Employment Category'
+vid: employment_category
+description: 'Contains the Faculty Employment Category'
+hierarchy: 0
+weight: 0
