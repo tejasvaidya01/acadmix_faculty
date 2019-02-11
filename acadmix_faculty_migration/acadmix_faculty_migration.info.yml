@@ -4,6 +4,6 @@ description: 'Import/Migrate data from CSV into Acadmix Faculty Content'
 core: 8.x
 package: 'Acadmix Migration'
 dependencies:
+  - acadmix_faculty
   - migrate_tools
   - migrate_file
-  - acadmix_faculty
